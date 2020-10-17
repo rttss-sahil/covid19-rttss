@@ -28,11 +28,24 @@
 }
 
 
+@font-face {
+    src: url(../refs/font/spacegrotesk-bold.woff2);
+    font-family: 'space_groteskregular';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+ -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+}
 
 body {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
  font-family: 'space_groteskregular', sans-serif;
  font-size: 1rem;
  font-weight: 400;
@@ -41,10 +54,16 @@ body {
  overflow-x: hidden;
  background-color: #fff;
 }
-/* 
 
-@font-face {
- src: url(../assets/font/spacegrotesk-regular.woff2);
- src: url(../assets/font/spacegrotesk-medium.woff2);
- src: url(../assets/font/spacegrotesk-medium.woff2);
-} */
+.body {
+height: 100%;
+width: 100%
+}
+
+.body.dark {
+background-color: #090522;
+}
+
+.body.light {
+    background-color: #F4AAAF;
+}

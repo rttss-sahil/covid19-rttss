@@ -1,0 +1,134 @@
+.header__area {
+ padding: 1rem 0;
+ background-color: transparent;
+}
+
+
+.header__area.header__absolute {
+ position: absolute;
+ width: 100%;
+ /* background: #fff; */
+ z-index: 99;
+}
+
+.header__area.sticky {
+ position: fixed;
+ width: 100%;
+ top: 0;
+ left: 0;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    padding: 0 1rem;
+    margin: 0 1rem;
+}
+
+
+/* 
+@media (min-width: 576px) {
+.container {
+    max-width: 540px;
+}} */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+
+
+
+/* LOGO                                                  */
+.header__logo a {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo__image {
+    width: 2.25rem;
+}
+
+
+.header__logo__text {
+    color: #151D41;
+    background-color: transparent;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-left: 0.5rem;
+}
+
+
+
+
+/* HAMBURGER                                             */
+
+.menu {
+    display: flex;
+    align-items: center;
+    /* max-width: 50%; */
+}
+
+.stellarnav .menu__toggle span.bars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+}
+
+.stellarnav.light .menu__toggle span.bars span {
+    background: #000;
+}
+
+.stellarnav .menu__toggle span.bars span {
+    display: block;
+    width: 1.75rem;
+    height: 3.25px;
+    border-radius: 999px;
+    background: #151D41;
+    margin: 0 0 3px;
+}
+
+.stellarnav .menu__toggle.open span.bars span:first-child {
+    transform: rotate(45deg) translate(5px, 3.5px);
+}
+
+.stellarnav .menu__toggle.open span.bars span:nth-child(2) {
+    opacity: 0;
+}
+
+
+.stellarnav .menu__toggle.open span.bars span:last-child {
+    transform: rotate(-45deg) translate(5px, -3.5px);
+}
+
+
+/* NAVBAR LISTS                                            */
+
+.navclass {
+    position: fixed;
+    top: 5rem;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    max-width: 180px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    opacity: 0;
+    transform: translateX(100%);
+    height: calc(100vh - 2rem - 42px);
+}
+
+.navclass.open {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.navclass li {
+    border-bottom: 1px solid #151D41;
+}
+

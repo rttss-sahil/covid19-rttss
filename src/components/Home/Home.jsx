@@ -2,14 +2,21 @@ import React, { Suspense } from "react";
 import "./Home.css";
 
 import Loading from "../Loading/Loading";
+import ThemeContext from "../refs/Context/Context";
+
 const Navbar = React.lazy(() => import("../Navbar/Navbar"));
 
-function Home({ theme }) {
+function Home() {
   return (
-    <Suspense fallback={<Loading theme={theme} />}>
-      <Loading theme={theme} />
-      <Navbar />
-    </Suspense>
+    <ThemeContext.Consumer>
+      {(state) => (
+        <div className={`body ${state.theme}`}>
+          <Suspense fallback={<Loading />}>
+            <Navbar />
+          </Suspense>
+        </div>
+      )}
+    </ThemeContext.Consumer>
   );
 }
 

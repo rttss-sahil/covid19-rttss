@@ -9,11 +9,11 @@
  z-index: 999;
 }
 
-.light {
+.loading.light {
  background-color: #F4AAAF;
 }
 
-.dark {
+.loading.dark {
  background-color: #0B043B;
 }
 

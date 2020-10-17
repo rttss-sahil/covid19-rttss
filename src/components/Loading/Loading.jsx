@@ -1,20 +1,24 @@
 import React from "react";
+import ThemeContext from "../refs/Context/Context";
 import "./Loading.css";
 
-// const pics = `${process}`;
-function Loading({ theme }) {
+function Loading() {
   return (
-    <div className={`loading ${theme}`}>
-      <img
-        className="loading__loader"
-        src={
-          theme === "light"
-            ? "/assets/images/light/big__virous.png"
-            : "/assets/images/dark/preloader2.png"
-        }
-        alt=""
-      />
-    </div>
+    <ThemeContext.Consumer>
+      {(state) => (
+        <div className={`loading ${state.theme}`}>
+          <img
+            className="loading__loader"
+            src={
+              state.theme === "light"
+                ? "/assets/images/light/big__virous.png"
+                : "/assets/images/dark/preloader2.png"
+            }
+            alt=""
+          />
+        </div>
+      )}
+    </ThemeContext.Consumer>
   );
 }
 

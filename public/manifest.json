@@ -3,7 +3,7 @@
   "name": "Covid19 App by Rttss",
   "icons": [
     {
-      "src": "./assets/images/logo.png",
+      "src": "./assets/images/light/logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }

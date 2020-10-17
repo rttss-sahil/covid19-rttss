@@ -1,27 +1,30 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { BrowserRouter } from "react-router-dom";
 import Home from "./components/Home/Home";
+import ThemeContext from "./components/refs/Context/Context";
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [state, setState] = useState({
+    theme: "light",
+    changeTheme: (theme) => {
+      document.head.querySelector("link").href =
+        theme === "light"
+          ? "/assets/images/light/logo.png"
+          : "/assets/images/dark/preloader2.png";
+      setState({
+        ...state,
+        theme,
+      });
+    },
+  });
 
-  useEffect(() => {
-    const themeChanger = () => {
-      theme === "light" ? setTheme("dark") : setTheme("light");
-    };
-
-    document.head.querySelector("link").href =
-      theme === "light"
-        ? "assets/images/light/logo.png"
-        : "/assets/images/dark/preloader2.png";
-  }, [theme]);
   return (
     <React.Fragment>
       <BrowserRouter>
-        <div className="body">
-          <Home theme={theme} />
-        </div>
+        <ThemeContext.Provider value={{ ...state }}>
+          <Home />
+        </ThemeContext.Provider>
       </BrowserRouter>
     </React.Fragment>
   );
