@@ -1,0 +1,15 @@
+{
+  "short_name": "Covid19 App",
+  "name": "Covid19 App by Rttss",
+  "icons": [
+    {
+      "src": "./assets/images/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

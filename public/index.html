@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="./assets/images/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Covid19 tracker by sahil rathee" />
+  <link rel="apple-touch-icon" href="./assets/images/logo.png" />
+  <link rel="manifest" href="./manifest.json" />
+  <title>Covid19 by Rttss</title>
+</head>
+
+<body>
+  <noscript>Please enable JavaScript to run this app. The same can be found in browser settings.</noscript>
+
+  <div id="rttss-app"></div>
+
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js')
+        .catch(err => console.log("Serviceworker Error: ", err))
+    }
+  </script>
+</body>
+
+</html>
