@@ -6,17 +6,18 @@
 
 .header__area.header__absolute {
  position: absolute;
+ background-color: #fff;
  width: 100%;
- /* background: #fff; */
  z-index: 99;
 }
 
-.header__area.sticky {
+.header__area.header__sticky {
  position: fixed;
  width: 100%;
  top: 0;
  left: 0;
  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+ background-color: #fff;
 }
 
 .container {
@@ -25,11 +26,6 @@
 }
 
 
-/* 
-@media (min-width: 576px) {
-.container {
-    max-width: 540px;
-}} */
 
 .row {
     display: flex;
@@ -67,7 +63,6 @@
 .menu {
     display: flex;
     align-items: center;
-    /* max-width: 50%; */
 }
 
 .stellarnav .menu__toggle span.bars {
@@ -115,12 +110,12 @@
     bottom: 0;
     height: 100vh;
     width: 100%;
-    max-width: 180px;
+    max-width: 280px;
     overflow-x: hidden;
     overflow-y: auto;
     opacity: 0;
+    background-color: #fff;
     transform: translateX(100%);
-    height: calc(100vh - 2rem - 42px);
 }
 
 .navclass.open {
@@ -128,7 +123,127 @@
     transform: translateX(0);
 }
 
-.navclass li {
-    border-bottom: 1px solid #151D41;
+.stellarnav li li {
+    display: block;
 }
 
+.stellarnav li {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    line-height: normal;
+}
+
+.dd__toggle .icon__plus {
+    position: relative;
+    width: 12px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.stellarnav.light li a,
+.stellarnav.dark li a {
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+.stellarnav li a {
+    padding: 15px;
+    display: block;
+    color: #51587B;
+    text-transform: capitalize;
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+.main__menu li a:hover, .main__menu li.current a {
+    color: #EB4559;
+}
+
+
+
+
+/* DD TOGGLE                                               */
+
+
+
+.stellarnav.light a.dd__toggle,
+.stellarnav.dark a.dd__toggle {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    z-index: 9999;
+    border: 0;
+    transform: rotate(0deg);
+}
+
+
+.stellarnav ul ul li{
+    height: 0px;
+    z-index: -999;
+    transform: translateY(-50%) rotateX(45deg);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.stellarnav ul ul.open li{
+    height: 100%;
+    z-index: 999;
+    transform: translate(0);
+    opacity: 1;
+}
+
+.stellarnav ul ul.open li a{
+    transition: all 0.5s ease-in-out;
+}
+
+.stellarnav ul ul.open li:hover a{
+    transform: translateX(1rem);
+    color: white;
+}
+
+.stellarnav.light ul ul.open li:hover a{
+    background-color: #EB4559;
+}
+
+.dd__toggle.close .icon__plus::before {
+    transform: rotate(315deg);
+}
+.dd__toggle.close .icon__plus::after {
+    transform: rotate(225deg);
+}
+
+
+
+
+.stellarnav li > a.dd__toggle {
+    padding: 0;
+}
+
+.dd__toggle .icon__plus::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 0px;
+    border-bottom: solid 2px #151D41;
+    position: absolute;
+    top: 50%;
+    transform: rotate(90deg);
+    transition: all 0.3s;
+}
+
+.stellarnav a.dd__toggle .icon__plus::after {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 0px;
+    top: 50%;
+    border-bottom: solid 2px #151D41;
+    position: absolute;
+    transition: all 0.3s;
+
+}

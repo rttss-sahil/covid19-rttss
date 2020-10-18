@@ -4,6 +4,8 @@ import { BrowserRouter } from "react-router-dom";
 import Home from "./components/Home/Home";
 import ThemeContext from "./components/refs/Context/Context";
 
+import "./Animate.css";
+
 function App() {
   const [state, setState] = useState({
     theme: "light",

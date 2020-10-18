@@ -64,6 +64,32 @@ width: 100%
 background-color: #090522;
 }
 
+
+/* 
 .body.light {
     background-color: #F4AAAF;
+} */
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+
+
+
+
+
+.cbtn {
+ display: inline-block;
+ padding: 13px 25px;
+ background: #000;
+ color: #fff;
+ font-size: 16px;
+ font-weight: 700;
+ font-size: 16px;
+ line-height: 16px;
+ text-transform: capitalize;
 }
