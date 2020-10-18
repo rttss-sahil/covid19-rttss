@@ -1,0 +1,138 @@
+/* ABSOLUTE IMAGES                             */
+
+.contagion {
+ padding: 5rem 0;
+ position: relative;
+ z-index: 2;
+ overflow: hidden;
+ background: #151D41 !important;
+}
+
+img.contagion__img {
+ position: absolute;
+ z-index: -1;
+ opacity: .1;
+}
+
+img.contagion__img.contagion__img1 {
+ top: 36%;
+ left: -68px;
+ height: 150px;
+}
+
+img.contagion__img.contagion__img2 {
+ right: -34px;
+ height: 80px;
+ top: 40%;
+}
+
+img.contagion__img.contagion__img3 {
+ right: 3%;
+ top: 50%;
+ height: 30px;
+}
+
+
+
+/* MAIN                                      */
+
+
+
+
+/* MAIN LEFT                                */
+
+.contagion__left,
+.contagion__left__left,
+.contagion__left__right {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+}
+
+
+@media (min-width:768px) {
+ .contagion__left {
+  flex-direction: row;
+ }
+}
+
+
+
+.single__contagion {
+ text-align: center;
+ color: rgba(255, 255, 255, 0.65);
+ background: #484E68;
+ width: 90%;
+ -webkit-box-shadow: 10px 20px 100px rgba(2, 2, 3, 0.05);
+ box-shadow: 10px 20px 100px rgba(2, 2, 3, 0.05);
+ border-radius: 5px;
+ margin-bottom: 30px;
+ padding: 35px 30px;
+ -webkit-transition: all .4s;
+ -o-transition: all .4s;
+ transition: all .4s;
+ -webkit-transform: translateY(0);
+ -ms-transform: translateY(0);
+ transform: translateY(0);
+}
+
+.single__contagion:hover {
+ text-align: center;
+ background: #606579;
+ -webkit-transition: all .6s;
+ -o-transition: all .6s;
+ transition: all .6s;
+ -webkit-transform: translateY(-5px);
+ -ms-transform: translateY(-5px);
+ transform: translateY(-5px);
+}
+
+.contagion__icon img{
+  height: 4rem;
+ }
+ 
+ @media (min-width:768px) {
+  .contagion__icon img {
+   height: 5rem;
+ }
+}
+
+.single__contagion h3 {
+ font-size: 1.25rem;
+ margin: 1rem 0;
+ font-weight: 700;
+ color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN RIGHT                               */
+
+
+.contagion__right{
+ margin-top: 5rem;
+}
+
+.contagion__right h2,
+.contagion__right h4{
+ color: white;
+}
+
+@media (min-width:768px) {
+ .contagion__right .points ul li {
+  margin-left: 2rem;
+  width: 80%;
+ }
+}

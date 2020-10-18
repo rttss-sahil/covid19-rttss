@@ -6,6 +6,11 @@ import ThemeContext from "../refs/Context/Context";
 
 const Navbar = React.lazy(() => import("../Navbar/Navbar"));
 const Welcome = React.lazy(() => import("../Welcome/Welcome"));
+const Counter = React.lazy(() => import("../Counter/Counter"));
+const About = React.lazy(() => import("../About/About"));
+const Symptoms = React.lazy(() => import("../Symptoms/Symptoms"));
+const Map = React.lazy(() => import("../Map/Map"));
+const Contagion = React.lazy(() => import("../Contagion/Contagion"));
 
 function Home() {
   return (
@@ -15,6 +20,11 @@ function Home() {
           <Suspense fallback={<Loading />}>
             <Navbar />
             <Welcome />
+            <Counter />
+            <About />
+            <Symptoms />
+            <Map />
+            <Contagion />
           </Suspense>
         </div>
       )}

@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import ThemeContext from "./components/refs/Context/Context";
 
 import "./Animate.css";
+import "./FontAwesome.css";
 
 function App() {
   const [state, setState] = useState({

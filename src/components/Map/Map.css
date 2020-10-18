@@ -1,0 +1,71 @@
+/* ABSOLUTE IMAGES                                  */
+
+.map__area {
+ position: relative;
+ z-index: 2;
+ overflow: hidden;
+}
+
+img.prevention__img {
+ position: absolute;
+ z-index: -1;
+}
+
+img.prevention__img.prevention__img1 {
+ top: 50%;
+ height: 130px;
+ left: -60px;
+}
+
+img.prevention__img.prevention__img2 {
+ right: -73px;
+ top: 50%;
+ height: 150px;
+}
+
+img.prevention__img.prevention__img3 {
+ top: 68%;
+ height: 40px;
+ left: 2%;
+}
+
+
+/* MAIN AREA                             */
+
+.map__main {
+ display: flex;
+ width: 100%;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+
+
+
+
+
+/* MAIN LEFT                             */
+
+
+
+
+
+
+
+
+
+
+/* MAIN RIGHT                                  */
+
+
+.map__right {
+ margin: 5rem 0;
+ width: 100%;
+}
+
+
+.mapping iframe {
+ min-height: 600px;
+ width: 100%;
+}

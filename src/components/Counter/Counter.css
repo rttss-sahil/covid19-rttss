@@ -1,0 +1,121 @@
+
+
+
+/* ROW                          */
+
+.counter__area > .container > .row {
+ margin: 6rem 1rem;
+}
+
+.counters {
+ position: relative;
+ z-index: 2;
+ overflow: hidden;
+ padding: 2rem 1rem;
+ -webkit-box-shadow: 0px 20px 100px rgba(2, 2, 3, 0.21);
+ box-shadow: 0px 20px 100px rgba(2, 2, 3, 0.291);
+ border-radius: 10px;
+}
+
+.counters .counters__wrap .row {
+ display: flex;
+ flex-wrap: wrap;
+ margin: 0 1rem;
+}
+.text {
+ display: grid;
+ place-items: center;
+ text-align: center;
+ padding: 1rem 0;
+}
+
+.text:nth-child(1),
+.text:nth-child(2),
+.text:nth-child(3),
+.text:nth-child(4)
+ {
+ flex: 0 0 50%;
+}
+
+.text:nth-child(5) {
+ flex: 0 0 100%;
+}
+
+.text h2 {
+ font-size: 1.75rem;
+}
+
+.text:nth-child(1) h2,
+.text:nth-child(2) h2,
+.text:nth-child(4) h2 {
+ color: var(--danger);
+}
+
+.text:nth-child(3) h2 {
+ color: var(--teal);
+}
+
+.text p {
+ font-size: 14px;
+ opacity: 0.5;
+}
+
+@media (min-width:768px) {
+ .text h2 {
+ font-size: 2.25rem;
+ }
+ .text p{
+  font-size: 1rem;
+ }
+}
+
+.text a {
+ color: var(--danger);
+ text-decoration: underline;
+ text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ABSOLUTE IMAGES                          */
+
+img.counter__bg {
+ position: absolute;
+ z-index: -1;
+ height: 60px;
+}
+
+img.counter__bg.counter__bg1 {
+ bottom: -20px;
+ right: -25px;
+}
+
+img.counter__bg.counter__bg2 {
+ left: -20px;
+ bottom: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */

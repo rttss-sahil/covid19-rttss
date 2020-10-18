@@ -22,8 +22,14 @@ function Welcome() {
               <br />
               disease caused by a new coronavirus.
             </h4>
-            <NavLink className="cbtn btn1" to="#">
-              Check Symptoms
+            <NavLink
+              className="cbtn btn1"
+              to={{
+                pathname:
+                  "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public",
+              }}
+            >
+              Guidelines by WHO
             </NavLink>
           </div>
           <div className="welcome__right welcome__shapes fadeInRight animated">

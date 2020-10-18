@@ -1,0 +1,67 @@
+/* ABSOLUTE I<AGES                          */
+
+.about__area {
+ margin-top: 4rem;
+ position: relative;
+ z-index: 2;
+ overflow: hidden;
+}
+
+img.about__shape {
+ position: absolute;
+ z-index: -1;
+}
+
+img.about__shape.about__shape1 {
+ top: 50%;
+ left: -26px;
+}
+
+img.about__shape.about__shape2 {
+ top: 26%;
+ left: 31%;
+  height: 30px;
+}
+
+img.about__shape.about__shape3 {
+ right: -30px;
+ top: 34%;
+ height: 80px;
+}
+
+img.about__shape.about__shape4 {
+ right: 4%;
+ top: 46%;
+ height: 30px;
+}
+
+
+
+
+
+/* MAIN                                      */
+
+.about__main {
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ flex-direction: column;
+}
+
+.about__main > * {
+ flex: 0 0 50%;
+}
+
+@media (min-width:1200px) {
+ .about__main {
+  flex-direction: row;
+ }
+}
+
+
+/* ABOUT_LEFT                                  */
+
+
+
+
+/* ABOUT_RIGHT                                      */

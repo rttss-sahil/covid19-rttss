@@ -20,19 +20,20 @@
  background-color: #fff;
 }
 
-.container {
-    padding: 0 1rem;
-    margin: 0 1rem;
+.header__area .row {
+ width: 100%;
 }
 
 
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 1rem;
-}
+
+
+
+
+
+
+
+
 
 
 
