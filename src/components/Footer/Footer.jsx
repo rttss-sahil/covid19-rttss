@@ -19,14 +19,15 @@ function Footer() {
             <div className="footer__dsec">
               <p>
                 Coronavirus disease (COVID-19) is an infectious disease caused
-                by NavLink new virus. The disease causes.
+                by a new virus. Coronavirus Kills.
               </p>
               <ul className="footer-social dinline">
                 <li>
                   <NavLink
+                    target="_blank"
                     className="active"
                     to={{
-                      pathname: "",
+                      pathname: "https://www.instagram.com/sahil_rttss/",
                     }}
                   >
                     <i className="fab fa-instagram"></i>
@@ -34,8 +35,9 @@ function Footer() {
                 </li>
                 <li>
                   <NavLink
+                    target="_blank"
                     to={{
-                      pathname: "",
+                      pathname: "https://github.com/rttss",
                     }}
                   >
                     <i className="fab fa-github"></i>
@@ -43,11 +45,13 @@ function Footer() {
                 </li>
                 <li>
                   <NavLink
+                    target="_blank"
                     to={{
-                      pathname: "",
+                      pathname:
+                        "https://www.linkedin.com/in/sahil-rathee-b3993116b/",
                     }}
                   >
-                    <i className="fab fa-twitter"></i>
+                    <i className="fab fa-linkedin"></i>
                   </NavLink>
                 </li>
               </ul>
@@ -58,8 +62,10 @@ function Footer() {
             <ul>
               <li>
                 <NavLink
+                  target="_blank"
                   to={{
-                    pathname: "",
+                    pathname:
+                      "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public",
                   }}
                 >
                   WHO Information
@@ -67,8 +73,9 @@ function Footer() {
               </li>
               <li>
                 <NavLink
+                  target="_blank"
                   to={{
-                    pathname: "",
+                    pathname: "https://en.wikipedia.org/wiki/COVID-19_pandemic",
                   }}
                 >
                   Covid-19 Wikipedia
@@ -76,17 +83,10 @@ function Footer() {
               </li>
               <li>
                 <NavLink
+                  target="_blank"
                   to={{
-                    pathname: "",
-                  }}
-                >
-                  Service
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to={{
-                    pathname: "",
+                    pathname:
+                      "https://www.cnn.com/specials/world/coronavirus-outbreak-intl-hnk",
                   }}
                 >
                   CNN News
@@ -94,8 +94,9 @@ function Footer() {
               </li>
               <li>
                 <NavLink
+                  target="_blank"
                   to={{
-                    pathname: "",
+                    pathname: "https://www.worldometers.info/coronavirus/",
                   }}
                 >
                   Worldometer Info
@@ -110,6 +111,7 @@ function Footer() {
                 <img src="assets/images/light/phone__white.png" alt="" />
               </div>
               <NavLink
+                target="_blank"
                 to={{
                   pathname: "tel:9992396866",
                 }}
@@ -121,25 +123,20 @@ function Footer() {
               <div className="single__contact__icon">
                 <i className="fas fa-map-marker-alt"></i>
               </div>
-              <p>Mohakhali, Dhaka-1212</p>
+              <p>Dwarka, New Delhi, India</p>
             </div>
             <div className="single__contact">
               <div className="single__contact__icon">
                 <i className="fas fa-envelope"></i>
               </div>
+
               <NavLink
+                target="_blank"
                 to={{
-                  pathname: "mailto:director@iedcr.gov.bd",
+                  pathname: "mailto:sahil.git@outlook.com",
                 }}
               >
-                director@iedcr.gov.bd
-              </NavLink>
-              <NavLink
-                to={{
-                  pathname: "mailto:director@iedcr.gov.bd",
-                }}
-              >
-                iedcrit@gmail.com
+                sahil.git@outlook.com
               </NavLink>
             </div>
           </div>

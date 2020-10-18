@@ -34,6 +34,35 @@ function Navbar() {
     },
     { passive: true }
   );
+  document.addEventListener(
+    "click",
+    (e) => {
+      const target = e.target.parentElement.classList;
+      const istrue = [
+        "bars",
+        "menu__toggle",
+        "stellarnav",
+        "main__menu",
+        "menu",
+      ].some((item) => {
+        return [...target].includes(item);
+      });
+      if (!istrue) {
+        if (
+          [...document.querySelector(".menu__toggle").classList].includes(
+            "open"
+          )
+        ) {
+          setMenuToggle("");
+          setNavClass("");
+          setDdToggleList1("");
+          setDdToggleList2("");
+        }
+      }
+    },
+    { passive: true }
+  );
+
   return (
     <ThemeContext.Consumer>
       {(state) => (
