@@ -5,7 +5,11 @@
  position: relative;
  z-index: 2;
  overflow: hidden;
- background: #151D41 !important;
+ background: #151D41;
+}
+
+.body.dark .contagion {
+  background-color: #1B163A;
 }
 
 img.contagion__img {
@@ -77,6 +81,10 @@ img.contagion__img.contagion__img3 {
  transform: translateY(0);
 }
 
+.body.dark .single__contagion {
+  background-color: #161231;
+}
+
 .single__contagion:hover {
  text-align: center;
  background: #606579;
@@ -86,6 +94,10 @@ img.contagion__img.contagion__img3 {
  -webkit-transform: translateY(-5px);
  -ms-transform: translateY(-5px);
  transform: translateY(-5px);
+}
+
+.body.dark .single__contagion:hover {
+  background-color: #2B2A99;
 }
 
 .contagion__icon img{

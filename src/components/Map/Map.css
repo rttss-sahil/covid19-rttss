@@ -11,6 +11,10 @@ img.prevention__img {
  z-index: -1;
 }
 
+.body.dark img.prevention__img {
+ opacity: 0.25;
+}
+
 img.prevention__img.prevention__img1 {
  top: 50%;
  height: 130px;

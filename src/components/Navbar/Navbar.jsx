@@ -59,7 +59,7 @@ function Navbar() {
 
               <div className="menu">
                 <div className="main__menu">
-                  <div className={`stellarnav ${state.theme}`}>
+                  <div className={`stellarnav`}>
                     <div
                       className={`menu__toggle ${menuToggle}`}
                       onClick={toggleMenu}

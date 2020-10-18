@@ -12,6 +12,10 @@ img.symptom__shape {
  z-index: -1;
 }
 
+.body.dark img.symptom__shape{
+ opacity: 0.25;
+}
+
 img.symptom__shape.symptom_1 {
  top: 50%;
  left: -30px;

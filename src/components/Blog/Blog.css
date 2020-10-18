@@ -11,6 +11,10 @@ img.blog__img {
  z-index: -1;
 }
 
+.body.dark img.blog__img {
+ opacity: 0.25;
+}
+
 img.blog__img.blog__img1 {
  top: 50%;
  height: 150px;
@@ -90,8 +94,16 @@ img.blog__img.blog__img2 {
  color: #000000;
 }
 
+.body.dark .single__blog a{
+ color: white;
+}
+
 .single__blog a:hover {
  color: var(--red);
+}
+
+.body.dark .single__blog a:hover {
+ color: #E77AEA;
 }
 
 a.readmore {
@@ -101,4 +113,8 @@ a.readmore {
  color: var(--red);
  text-transform: capitalize;
  display: block;
+}
+
+.body.dark a.readmore {
+ color: #E77AEA;
 }

@@ -9,7 +9,7 @@ import "./FontAwesome.css";
 
 function App() {
   const [state, setState] = useState({
-    theme: "light",
+    theme: "dark",
     changeTheme: (theme) => {
       document.head.querySelector("link").href =
         theme === "light"

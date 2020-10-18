@@ -10,6 +10,10 @@ img.cta__img {
  z-index: -1;
 }
 
+.body.dark img.cta__img {
+ opacity: 0.25;
+}
+
 img.cta__img.cta__img1 {
  left: -19px;
  height: 60px;
@@ -65,6 +69,10 @@ img.cta__img.cta__img2 {
  }
 }
 
+.body.dark .cta__wrap {
+ background-color: #2B2A99;
+}
+
 .title h2 {
  text-align: center;
  padding: 1rem 0.5rem;
@@ -94,4 +102,16 @@ img.cta__img.cta__img2 {
 
 .btn__group a{
  font-size: 14px;
+}
+
+
+.body.dark .cbtn.emergency_btn {
+ background: transparent;
+ border: 1px solid #E77AEA;
+ color: #E77AEA;
+}
+
+.body.dark .cbtn.emergency_btn:hover {
+ background: #E77AEA;
+ color: #fff;
 }

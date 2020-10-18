@@ -6,7 +6,7 @@
 
 .header__area.header__absolute {
  position: absolute;
- background-color: #fff;
+ /* background-color: #fff; */
  width: 100%;
  z-index: 99;
 }
@@ -19,6 +19,11 @@
  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
  background-color: #fff;
 }
+
+.body.dark .header__area.header__sticky {
+    background-color: #0B043B !important;
+}
+
 
 .header__area .row {
  width: 100%;
@@ -56,6 +61,10 @@
     margin-left: 0.5rem;
 }
 
+.body.dark .header__logo__text {
+    color: white;
+}
+
 
 
 
@@ -88,6 +97,10 @@
     margin: 0 0 3px;
 }
 
+.body.dark .stellarnav .menu__toggle span.bars span {
+    background-color: #fff;
+}
+
 .stellarnav .menu__toggle.open span.bars span:first-child {
     transform: rotate(45deg) translate(5px, 3.5px);
 }
@@ -117,6 +130,10 @@
     opacity: 0;
     background-color: #fff;
     transform: translateX(100%);
+}
+
+.body.dark .navclass.open {
+    background-color: #0B043B !important;
 }
 
 .navclass.open {
@@ -157,19 +174,23 @@
     text-transform: capitalize;
     border-bottom: 1px solid rgba(255, 255, 255, .15);
 }
+.body.dark .stellarnav li a {
+    color: white;
+}
 .main__menu li a:hover, .main__menu li.current a {
     color: #EB4559;
 }
+.body.dark .main__menu li a:hover, .main__menu li.current a {
+    color: #3A3ACC;
+}
+
 
 
 
 
 /* DD TOGGLE                                               */
 
-
-
-.stellarnav.light a.dd__toggle,
-.stellarnav.dark a.dd__toggle {
+.stellarnav a.dd__toggle {
     position: absolute;
     top: 0;
     right: 1rem;
@@ -181,7 +202,6 @@
     border: 0;
     transform: rotate(0deg);
 }
-
 
 .stellarnav ul ul li{
     height: 0px;
@@ -237,7 +257,7 @@
     transition: all 0.3s;
 }
 
-.stellarnav a.dd__toggle .icon__plus::after {
+.dd__toggle .icon__plus::after {
     content: '';
     display: block;
     width: 12px;
@@ -246,5 +266,9 @@
     border-bottom: solid 2px #151D41;
     position: absolute;
     transition: all 0.3s;
+}
 
+.body.dark .dd__toggle .icon__plus::before,
+.body.dark .dd__toggle .icon__plus::after {
+    border-bottom: 2px solid white;
 }

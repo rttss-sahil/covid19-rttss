@@ -12,6 +12,10 @@ img.about__shape {
  z-index: -1;
 }
 
+.body.dark img.about__shape {
+  opacity: 0.25;
+}
+
 img.about__shape.about__shape1 {
  top: 50%;
  left: -26px;

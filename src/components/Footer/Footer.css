@@ -84,6 +84,9 @@ ul.footer-social li:hover {
     box-shadow: 0px 10px 20px rgba(235, 69, 89, 0.25);
 }
 
+.body.dark ul.footer-social li:hover {
+    background-color: #E77AEA;
+}
 
 
 
@@ -113,6 +116,10 @@ ul.footer-social li:hover {
 }
 .flex2 li a:hover {
  color: var(--red);
+}
+
+.body.dark .flex2 li a:hover {
+    color:  #E77AEA;
 }
 
 
@@ -145,4 +152,9 @@ ul.footer-social li:hover {
 .single__contact:hover a,
 .single__contact:hover p{
  color: var(--red);
+}
+
+.body.dark .single__contact:hover a,
+.body.dark .single__contact:hover p{
+    color: #E77AEA;
 }

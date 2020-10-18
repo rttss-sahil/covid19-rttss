@@ -104,6 +104,7 @@ body {
  color: #212529;
  overflow-x: hidden;
  background-color: #fff;
+ z-index: -999;
 }
 
 .body {
@@ -111,8 +112,10 @@ body {
  width: 100vw;
  overflow: hidden;
 }
+
 .body.dark {
-background-color: #090522;
+ background-color: #090522;
+ z-index: -999;
 }
 
 .container {
@@ -137,11 +140,27 @@ h1 {
  margin-bottom: 20px;
 }
 
+.body.dark h1 {
+    color: white;
+}
+
 @media (min-width: 768px) {
  h1 {
   font-size: 4rem;
   line-height: 5rem;
  }
+}
+
+
+h2 {
+ font-size: 40px;
+ line-height: 40px;
+ color: #151D41;
+ margin-bottom: 15px;
+}
+
+.body.dark h2 {
+    color: white;
 }
 
 h4 {
@@ -150,13 +169,10 @@ h4 {
  line-height: 34px;
  opacity: 0.5;
 }
-h2 {
- font-size: 40px;
- line-height: 40px;
- color: #151D41;
- margin-bottom: 15px;
-}
 
+.body.dark h4 {
+    color: white;
+}
 
 .cbtn {
  display: inline-block;

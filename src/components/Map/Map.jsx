@@ -19,11 +19,11 @@ function Map() {
             </div>
             <div className="map__right">
               <div className="mapping zoomIn">
-                {/* <iframe
+                <iframe
                   title="Tracker"
                   src="https://www.bing.com/covid"
                   frameBorder="0"
-                ></iframe> */}
+                ></iframe>
               </div>
             </div>
           </div>
