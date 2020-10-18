@@ -162,25 +162,23 @@
     vertical-align: middle;
 }
 
-.stellarnav.light li a,
-.stellarnav.dark li a {
-    border-bottom: 1px solid rgba(0, 0, 0, .15);
-}
-
 .stellarnav li a {
     padding: 15px;
     display: block;
     color: #51587B;
     text-transform: capitalize;
-    border-bottom: 1px solid rgba(255, 255, 255, .15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 .body.dark .stellarnav li a {
     color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
 }
 .main__menu li a:hover, .main__menu li.current a {
     color: #EB4559;
 }
-.body.dark .main__menu li a:hover, .main__menu li.current a {
+.body.dark .main__menu li a:hover,
+.body.dark .main__menu li.current a {
     color: #3A3ACC;
 }
 
@@ -227,9 +225,16 @@
     color: white;
 }
 
-.stellarnav.light ul ul.open li:hover a{
+.stellarnav ul ul.open li:hover a{
     background-color: #EB4559;
+    color: white;
 }
+
+.body.dark .stellarnav ul ul.open li:hover a{
+    background-color: #3A3ACC;
+    color: white;
+}
+
 
 .dd__toggle.close .icon__plus::before {
     transform: rotate(315deg);
