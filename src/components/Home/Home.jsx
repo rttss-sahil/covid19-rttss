@@ -11,6 +11,10 @@ const About = React.lazy(() => import("../About/About"));
 const Symptoms = React.lazy(() => import("../Symptoms/Symptoms"));
 const Map = React.lazy(() => import("../Map/Map"));
 const Contagion = React.lazy(() => import("../Contagion/Contagion"));
+const Prevention = React.lazy(() => import("../Prevention/Prevention"));
+const Blog = React.lazy(() => import("../Blog/Blog"));
+const Cta = React.lazy(() => import("../CTA/Cta"));
+const Footer = React.lazy(() => import("../Footer/Footer"));
 
 function Home() {
   return (
@@ -25,6 +29,10 @@ function Home() {
             <Symptoms />
             <Map />
             <Contagion />
+            <Prevention />
+            <Blog />
+            <Cta />
+            <Footer />
           </Suspense>
         </div>
       )}

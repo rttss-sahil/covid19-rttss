@@ -169,3 +169,22 @@ h2 {
  line-height: 16px;
  text-transform: capitalize;
 }
+
+a.cbtn.emergency_btn {
+ background: #fff;
+ text-align: center;
+ color: #EB4559;
+ border-radius: 30px;
+ border: 1px solid #EB4559;
+ box-shadow: 0px 20px 50px rgba(235, 69, 89, 0.1);
+ padding: 16px 30px;
+ transform: translateY(0px);
+ transition: all .5s;
+}
+
+a.cbtn.emergency_btn:hover {
+ background: #EB4559;
+ color: #fff;
+ transform: translateY(-5px);
+ transition: all .5s;
+}

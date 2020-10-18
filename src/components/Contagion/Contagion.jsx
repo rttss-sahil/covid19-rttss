@@ -77,7 +77,7 @@ function Contagion() {
                     to={{
                       pathname: "",
                     }}
-                    class="cbtn btn1"
+                    className="cbtn btn1"
                   >
                     How to Prevent
                   </NavLink>

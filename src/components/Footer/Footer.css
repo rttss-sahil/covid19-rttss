@@ -1,0 +1,148 @@
+.footer__area {
+ padding: 5rem 0;
+    background: #151D41;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    color: white;
+}
+
+.flex1,
+.flex2,
+.flex3 {
+ flex: 0 0 100%;
+ padding:  2rem;
+}
+
+
+@media (min-width: 768px) {
+.flex2,
+.flex3 {
+ padding: 5rem 0.5rem;
+ flex: 0 0 50%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FLEX !                                  */
+
+.footer__logo {
+ color: white;
+ font-size: 1.25rem;
+}
+
+
+.footer__area p {
+ opacity: 0.5;
+ margin: 1rem 0;
+}
+
+
+.footer-social {
+ display: flex;
+ justify-content: space-evenly;
+ margin: 2rem 0;
+}
+
+ul.footer-social li {
+    margin-right: 5px;
+    height: 3rem;
+    width:  3rem;
+    background: #6C7083;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+ul.footer-social li a {
+ padding: 10px;
+    text-align: center;
+    /* line-height: 35px; */
+    border-radius: 50%;
+    font-size: 2rem;
+    color: white;
+}
+
+ul.footer-social li:hover {
+    background: #EB4559;
+    box-shadow: 0px 10px 20px rgba(235, 69, 89, 0.25);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FLEX 2                                        */
+
+.flex2 li{
+ margin: 1rem;
+}
+
+.flex2 li a{
+ color: white;
+}
+.flex2 li a:hover {
+ color: var(--red);
+}
+
+
+
+
+
+
+
+
+/* FLEX 3                                     */
+
+.single__contact {
+ margin: 1rem 0;
+ display: flex;
+ flex-direction: row;
+}
+
+.single__contact__icon {
+ display: grid;
+ place-items: center;
+ margin-right: 1rem;
+}
+
+.single__contact a,
+.single__contact p {
+ color: white;
+ opacity: 1;
+}
+
+.single__contact:hover a,
+.single__contact:hover p{
+ color: var(--red);
+}
