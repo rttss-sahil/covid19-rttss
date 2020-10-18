@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Cta.css";
 
 function Cta() {
@@ -17,12 +18,22 @@ function Cta() {
                   </h4>
                   <div className="space-30"></div>
                   <div className="btn__group">
-                    <a href="#" className="cbtn emergency_btn">
+                    <NavLink
+                      to={{
+                        pathname: "",
+                      }}
+                      className="cbtn emergency_btn"
+                    >
                       Call For Test
-                    </a>
-                    <a href="#" className="cbtn emergency_btn">
+                    </NavLink>
+                    <NavLink
+                      to={{
+                        pathname: "",
+                      }}
+                      className="cbtn emergency_btn"
+                    >
                       Book Doctor
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>
