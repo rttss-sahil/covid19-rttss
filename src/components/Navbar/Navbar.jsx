@@ -37,6 +37,7 @@ function Navbar() {
   document.addEventListener(
     "click",
     (e) => {
+      console.log(e.target.parentElement.classList);
       const target = e.target.parentElement.classList;
       const istrue = [
         "bars",
@@ -44,6 +45,11 @@ function Navbar() {
         "stellarnav",
         "main__menu",
         "menu",
+        "dd__toggle",
+        "icon__plus",
+        "close",
+        "active",
+        "has__sub",
       ].some((item) => {
         return [...target].includes(item);
       });
@@ -140,22 +146,24 @@ function Navbar() {
                         <NavLink to="#symptoms">Symptoms</NavLink>
                       </li>
                       <li>
-                        <NavLink to="#blog">Blog</NavLink>
-                        <NavLink
-                          className={`dd__toggle ${ddToggle2}`}
-                          to="/"
-                          onClick={ddToggleHandler2}
-                        >
-                          <div className="icon__plus"></div>
-                        </NavLink>
-                        <ul className={ddToggleList2}>
-                          <li>
-                            <NavLink to="/blog">Blog</NavLink>
-                          </li>
-                          <li>
-                            <NavLink to="/single">Blog details</NavLink>
-                          </li>
-                        </ul>
+                        <div className="has__sub">
+                          <NavLink to="#blog">Blog</NavLink>
+                          <NavLink
+                            className={`dd__toggle ${ddToggle2}`}
+                            to="/"
+                            onClick={ddToggleHandler2}
+                          >
+                            <div className="icon__plus"></div>
+                          </NavLink>
+                          <ul className={ddToggleList2}>
+                            <li>
+                              <NavLink to="/blog">Blog</NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/single">Blog details</NavLink>
+                            </li>
+                          </ul>
+                        </div>
                       </li>
                       <li>
                         <NavLink to="#prevention">Prevention</NavLink>
