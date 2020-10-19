@@ -10,7 +10,7 @@ function Welcome() {
         <div className="welcome welcome1" id="home">
           <div className="container">
             <div className="row">
-              <div className="welcome__left fadeInLeft animated">
+              <div className="welcome__left fadeInLeft">
                 <p className="title__top">
                   <img
                     src={
@@ -42,7 +42,7 @@ function Welcome() {
                   Guidelines by WHO
                 </NavLink>
               </div>
-              <div className="welcome__right welcome__shapes fadeInRight animated">
+              <div className="welcome__right welcome__shapes fadeInRight">
                 <div className="welcome__shapes__wrap">
                   <img
                     src={

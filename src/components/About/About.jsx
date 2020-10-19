@@ -4,8 +4,6 @@ import ThemeContext from "../refs/Context/Context";
 import "./About.css";
 
 function About() {
-  // const leftAnimated = '';
-  // const rightAnimated = '';
   return (
     <ThemeContext.Consumer>
       {(state) => (
@@ -13,7 +11,7 @@ function About() {
           <div className="container">
             <div className="row">
               <div className="about__main">
-                <div className="about__left about__img fadeInLeft animated">
+                <div className="about__left about__img fadeInLeft">
                   <img
                     src={
                       state.theme === "light"
@@ -23,7 +21,7 @@ function About() {
                     alt=""
                   />
                 </div>
-                <div className="about__right fadeInRight animated">
+                <div className="about__right fadeInRight">
                   <div className="title">
                     <p className="title__top">About Covid-19</p>
                     <h2>What is Novel Coronavirus?</h2>

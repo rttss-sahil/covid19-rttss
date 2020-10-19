@@ -11,7 +11,7 @@ function Prevention() {
             <div className="row">
               <div className="prevention__main">
                 <div className="prevention__left">
-                  <div className="title fadeInDown animated">
+                  <div className="title fadeInDown">
                     <p className="title__top">Covid-19 Preventions</p>
                     <h2>How to protect yourself from Covid-19?</h2>
                     <h4>
@@ -23,10 +23,10 @@ function Prevention() {
                 <div className="prevention__right">
                   <div className="prevention__right__left">
                     <div className="do__lists">
-                      <h2 className="should__do fadeInUp animated">
+                      <h2 className="should__do fadeInUp">
                         What you <span>should do:</span>
                       </h2>
-                      <div className="single__list wow fadeInUp animated">
+                      <div className="single__list wow fadeInUp">
                         <div className="single__list__icon">
                           <img
                             src={
@@ -43,7 +43,7 @@ function Prevention() {
                           available, use hand sanitizer.
                         </p>
                       </div>
-                      <div className="single__list wow fadeInUp animated">
+                      <div className="single__list wow fadeInUp">
                         <div className="single__list__icon">
                           <img
                             src={
@@ -60,7 +60,7 @@ function Prevention() {
                           coughing or sneezing.
                         </p>
                       </div>
-                      <div className="single__list wow fadeInUp animated">
+                      <div className="single__list wow fadeInUp">
                         <div className="single__list__icon">
                           <img
                             src={
@@ -81,10 +81,10 @@ function Prevention() {
                   </div>
                   <div className="prevention__right__right">
                     <div className="do__lists">
-                      <h2 className="should__dont wow fadeInUp animated">
+                      <h2 className="should__dont wow fadeInUp">
                         What you <span>shouldn’t do:</span>
                       </h2>
-                      <div className="single__list wow fadeInUp animated">
+                      <div className="single__list wow fadeInUp">
                         <div className="single__list__icon">
                           <img
                             src={
@@ -101,7 +101,7 @@ function Prevention() {
                           available, use hand sanitizer.
                         </p>
                       </div>
-                      <div className="single__list wow fadeInUp animated">
+                      <div className="single__list wow fadeInUp">
                         <div className="single__list__icon">
                           <img
                             src={
@@ -118,7 +118,7 @@ function Prevention() {
                           coughing or sneezing.
                         </p>
                       </div>
-                      <div className="single__list wow fadeInUp animated">
+                      <div className="single__list wow fadeInUp">
                         <div className="single__list__icon">
                           <img
                             src={

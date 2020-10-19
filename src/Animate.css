@@ -11,6 +11,8 @@
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
+  opacity: 1;
+  transform: translate(0);
 }
 .animated.infinite {
   animation-iteration-count: infinite;
@@ -504,6 +506,7 @@
   }
 }
 .fadeInDown {
+  transform: translateY(50%);
   animation-name: fadeInDown;
 }
 @keyframes fadeInDownBig {
@@ -530,6 +533,8 @@
   }
 }
 .fadeInLeft {
+  transform: translateX(-50%);
+  opacity: 0;
   animation-name: fadeInLeft;
 }
 @keyframes fadeInLeftBig {
@@ -556,6 +561,8 @@
   }
 }
 .fadeInRight {
+  transform: translateX(50%);
+  opacity: 0;
   animation-name: fadeInRight;
 }
 @keyframes fadeInRightBig {

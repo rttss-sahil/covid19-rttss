@@ -8,7 +8,7 @@ function Map() {
         <div className="row">
           <div className="map__main">
             <div className="map__left">
-              <div className="title fadeInDown animated">
+              <div className="title fadeInDown">
                 <p className="title__top">Covid-19 Threat</p>
                 <h2>More than 59k died in Covid-19</h2>
                 <h4>

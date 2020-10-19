@@ -13,7 +13,7 @@ function Contagion() {
               <div className="contagion__main">
                 <div className="contagion__left">
                   <div className="contagion__left__left">
-                    <div className="single__contagion fadeInUp animated">
+                    <div className="single__contagion fadeInUp">
                       <div className="contagion__icon">
                         <img
                           src={
@@ -86,7 +86,7 @@ function Contagion() {
                   </div>
                 </div>
                 <div className="contagion__right">
-                  <div className="title fadeInRight animated">
+                  <div className="title fadeInRight">
                     <p className="title__top">Covid-19 Contagion</p>
                     <h2>How does novel coronavirus spread?</h2>
                     <h4>

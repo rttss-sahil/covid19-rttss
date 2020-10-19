@@ -19,7 +19,7 @@ function Symptoms() {
                         : "assets/images/dark/symptoms2.svg"
                     }
                     alt=""
-                    className="symptom__bg fadeInRight animated"
+                    className="symptom__bg fadeInRight"
                   ></img>
                 </div>
                 <div className="symptoms__right">

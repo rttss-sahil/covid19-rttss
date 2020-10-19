@@ -9,7 +9,7 @@ function Blog() {
         <div className="row">
           <div className="blog__main">
             <div className="blog__left">
-              <div className="title fadeInRight animated">
+              <div className="title fadeInRight">
                 <p className="title__top">News Feed</p>
                 <h2>Stay updated with our news feed.</h2>
                 <h4>
@@ -27,7 +27,7 @@ function Blog() {
               </NavLink>
             </div>
             <div className="blog__right">
-              <div className="blog__lists fadeInRight animated">
+              <div className="blog__lists fadeInRight">
                 <div className="single__blog">
                   <div className="single__blog__img">
                     <img src="assets/images/light/news1.jpg" alt="" />
