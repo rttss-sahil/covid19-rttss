@@ -37,7 +37,7 @@ function Footer() {
                   <NavLink
                     target="_blank"
                     to={{
-                      pathname: "https://github.com/rttss",
+                      pathname: "https://github.com/rttss-sahil",
                     }}
                   >
                     <i className="fab fa-github"></i>
