@@ -27,7 +27,7 @@ function Footer() {
                     target="_blank"
                     className="active"
                     to={{
-                      pathname: "https://www.instagram.com/sahil_rttss/",
+                      pathname: "https://www.instagram.com/rttss_sahil/",
                     }}
                   >
                     <i className="fab fa-instagram"></i>
